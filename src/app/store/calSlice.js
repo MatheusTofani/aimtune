@@ -3,10 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   jogoOrigem: null,
   jogoDestino: null,
-  sensibilidade: 0, 
+  sensibilidade: "", 
   resultado: 0,
-  dpiOrigem: 400,
-  dpiDestino: 400,
+  dpiOrigem: 0,
+  dpiDestino: 0,
 };
 
 export const calSlice = createSlice({
