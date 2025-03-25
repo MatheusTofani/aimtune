@@ -1,4 +1,6 @@
+
 import "./globals.css";
+import Providers from "./providers"; 
 
 export const metadata = {
   title: "Aim Tune",
@@ -9,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className="antialiased">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

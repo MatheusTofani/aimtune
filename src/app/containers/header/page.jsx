@@ -1,23 +1,57 @@
+"use client";
+
+import { useState } from "react";
 import { Container } from "../../components/container/style";
 import { HeaderBranding, HeaderContainer } from "./style";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
-  return (
-    <HeaderContainer className="shadow-xl
-    ">
-      <Container className="h-full flex justify-between items-center">
-        <HeaderBranding>Aim Tune</HeaderBranding>
-        <nav>
-          <ul className="flex gap-5">
-            <li>
-              <a href="#" className="text-[#FEF6EC]" >Conversor de Sensibilidade</a>
-            </li>
-            <li>
-              <a href="#" className="text-[#FEF6EC]">Calculadora eDPI</a>
-            </li>
-          </ul>
-        </nav>
-      </Container>
-    </HeaderContainer>
-  );
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
+        <HeaderContainer className="shadow-xl w-full">
+            <Container className="h-full flex justify-between items-center px-4">
+                <HeaderBranding>Aim Tune</HeaderBranding>
+                <nav className="hidden md:block">
+                    <ul className="flex gap-5">
+                        <li>
+                            <a href="/conversor" className="text-[#FEF6EC] hover:text-[#ffffff] transition-colors">
+                                Conversor de Sensibilidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/edpi" className="text-[#FEF6EC] hover:text-[#ffffff] transition-colors">
+                                Calculadora eDPI
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button className="text-[#FEF6EC] md:hidden" onClick={toggleMenu}>
+                    {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                </button>
+            </Container>
+
+            {/* Menu Mobile */}
+            {isMenuOpen && (
+                <div className="md:hidden bg-[#e90c2a] w-full py-4">
+                    <ul className="flex flex-col items-center gap-4">
+                        <li>
+                            <a href="/conversor" className="text-[#FEF6EC] hover:text-[#ffffff] transition-colors">
+                                Conversor de Sensibilidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/edpi" className="text-[#FEF6EC] hover:text-[#ffffff] transition-colors">
+                                Calculadora eDPI
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            )}
+        </HeaderContainer>
+    );
 }
