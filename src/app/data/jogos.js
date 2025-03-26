@@ -21,7 +21,7 @@ const Jogos = [
     },
     {
         id: 3,
-        jogo: "Call of Duty",
+        jogo: "Call of Duty / Warzone",
         converter: {
             "Valorant": 0.094,
             "Counter-Strike 2": 0.30,

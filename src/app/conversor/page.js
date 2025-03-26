@@ -10,7 +10,14 @@ import Dados from "../components/dados/page";
 import Calculadoras from "../components/calculadoras/page";
 
 export default function Conversor() {
-  const images = ["/fortnite.png", "/valorant.png", "/cs2.png", "/cod.png", "/minecraft.png", "/apex.png"];   
+  const images = [
+    "/fortnite.png",
+    "/valorant.png",
+    "/cs2.png",
+    "/cod.png",
+    "/minecraft.png",
+    "/apex.png",
+  ];
   const [backgroundImage, setBackgroundImage] = useState(images[0]);
 
   useEffect(() => {
@@ -20,7 +27,7 @@ export default function Conversor() {
         const nextIndex = (currentIndex + 1) % images.length;
         return images[nextIndex];
       });
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -29,7 +36,10 @@ export default function Conversor() {
     <>
       <Header />
 
-      <ContainerCalculator style={{ backgroundImage: `url(${backgroundImage}) ` }} className="py-10 flex flex-col items-center justify-center"> 
+      <ContainerCalculator
+        style={{ backgroundImage: `url(${backgroundImage}) ` }}
+        className=" py-10 flex flex-col items-center justify-center"
+      >
         <TitleSensiCalculator className="text-4xl font-semibold">
           Conversor de Sensibilidade
         </TitleSensiCalculator>
@@ -42,10 +52,13 @@ export default function Conversor() {
       <Container>
         <TutorialConverter />
         <Dados />
+        <h1 className="text-center text-2xl md:text-3xl font-semibold mb-8 md:mb-12">
+          Outras calculadoras
+        </h1>
         <Calculadoras />
       </Container>
 
       <Footer />
-      </>
+    </>
   );
 }

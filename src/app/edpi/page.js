@@ -39,7 +39,7 @@ export default function Edpi() {
 
       <ContainerCalculator
         style={{ backgroundImage: `url(${backgroundImage}) ` }}
-        className="py-10 flex flex-col items-center justify-center"
+        className=" py-10 flex flex-col items-center justify-center"
       >
         <Container>
         <TitleSensiCalculator className="text-4xl font-semibold">
@@ -52,6 +52,7 @@ export default function Edpi() {
       <Container>
         <TutorialConverter />
         <Dados />
+        <h1 className="text-center text-2xl md:text-3xl font-semibold mb-8 md:mb-12">Outras calculadoras</h1>
         <Calculadoras />
       </Container>
 

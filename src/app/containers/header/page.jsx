@@ -15,7 +15,7 @@ export default function Header() {
     return (
         <HeaderContainer className="shadow-xl w-full">
             <Container className="h-full flex justify-between items-center px-4">
-                <HeaderBranding>Aim Tune</HeaderBranding>
+                <HeaderBranding > <a href="/">Aim Tune</a> </HeaderBranding>
                 <nav className="hidden md:block">
                     <ul className="flex gap-5">
                         <li>

@@ -1,6 +1,6 @@
-
 import "./globals.css";
-import Providers from "./providers"; 
+import Providers from "./providers";
+import StyledComponentsRegistry from "./styled-registry"; 
 
 export const metadata = {
   title: "Aim Tune",
@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className="antialiased">
-        <Providers>{children}</Providers>
+        <StyledComponentsRegistry>
+          <Providers>{children}</Providers>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
