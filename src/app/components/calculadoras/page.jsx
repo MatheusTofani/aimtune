@@ -1,3 +1,5 @@
+"use client";   
+import React from "react";
 import { Button } from "./style";
 import { HiArrowPath } from "react-icons/hi2";
 import { RiCalculatorLine } from "react-icons/ri";
