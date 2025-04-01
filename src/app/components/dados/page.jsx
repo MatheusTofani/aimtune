@@ -1,3 +1,6 @@
+"use client";
+import React from "react";
+
 import { FaMouse, FaCalculator, FaMedal } from "react-icons/fa";
 
 export default function Dados() {

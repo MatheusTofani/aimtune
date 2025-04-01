@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { Container } from "@/app/components/container/style";
 import { HeroContainer } from "./style";
 import { HiArrowPath } from "react-icons/hi2";

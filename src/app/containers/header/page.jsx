@@ -1,6 +1,6 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import React from "react";
+import {  useState } from "react";
 import { Container } from "../../components/container/style";
 import { HeaderBranding, HeaderContainer } from "./style";
 import { FaBars, FaTimes } from "react-icons/fa";

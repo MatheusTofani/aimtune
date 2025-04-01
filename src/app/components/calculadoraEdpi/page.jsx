@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { FaCopy, FaCheck } from "react-icons/fa";
 import { 
     CalculadoraContainer, 

@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { ItemFooter } from "./style";
 

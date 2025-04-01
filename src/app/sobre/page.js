@@ -3,7 +3,6 @@
 import Footer from "../containers/footer/page";
 import Header from "../containers/header/page";
 import { Container } from "../components/container/style";
-import { AiOutlineAim } from "react-icons/ai";
 
 export default function Sobre() {
     return (
