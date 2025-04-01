@@ -33,7 +33,7 @@ export default function CalculadoraEdpi() {
     };
 
     return (
-        <CalculadoraContainer className="w-full h-auto rounded-md my-10 p-5 md:p-10 shadow-lg">
+        <CalculadoraContainer className="w-full h-auto rounded-md my-10 p-5 md:p-10 shadow-lg relative z-10">
             <CalculadoraForm className="flex flex-col md:flex-row gap-5 items-center">
                 {/* Grupo Sensibilidade - Layout original mantido */}
                 <div className="w-full md:w-auto">

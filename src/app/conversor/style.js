@@ -10,6 +10,16 @@ export const ContainerCalculator = styled.div`
   background-size: cover;
   background-position: center;
   min-height: 700px;
-  transition: background-image 1s ease-in-out;
   position: relative;
+  overflow: hidden;
+`;
+
+export const ImageBackground = styled.img`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
 `;
