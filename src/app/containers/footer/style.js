@@ -6,4 +6,14 @@ export const ItemFooter = styled.li`
   border-radius: 50%;
   border: solid 1px #fef6ec;
   padding: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fef6ec;
+    a{
+      
+      color: #e90c2a;
+    }
+    
+  }
 `;

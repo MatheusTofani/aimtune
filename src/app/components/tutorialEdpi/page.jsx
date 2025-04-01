@@ -1,6 +1,6 @@
 import { TutorialVideo } from "./style";
 
-export default function TutorialConverter() {
+export default function TutorialEDPI() {
     return (
         <section className="my-10 px-4">
             <h1 className="text-2xl md:text-3xl font-semibold my-8 md:my-10 text-center md:text-left">
@@ -31,7 +31,7 @@ export default function TutorialConverter() {
                 </ul>
 
                 <TutorialVideo
-                    src="/tutorial.mp4"
+                    src="/tutorialEDPI.mp4"
                     muted
                     autoPlay
                     loop

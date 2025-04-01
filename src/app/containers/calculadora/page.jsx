@@ -15,7 +15,7 @@ export default function Calculadora() {
   }, [jogoOrigem, jogoDestino, sensibilidade, dpiOrigem, dpiDestino, dispatch]);
 
   const [copiado, setCopiado] = useState(false);
-  
+
   const copiarResultado = async (e) => {
     e.preventDefault();
     try {
@@ -120,10 +120,11 @@ export default function Calculadora() {
 
         <div className="mt-5 w-[100px]">
           <CalculadoraFormLabel>Resultado:</CalculadoraFormLabel>
-          <button 
-            onClick={copiarResultado} 
-            className="transition cursor-pointer hover:bg-[#e90c2ae1] p-2 w-full h-10 rounded-md flex justify-center items-center gap-2 text-white bg-[#e90c2a]"
+          <button
+            onClick={copiarResultado}
+            className={`transition cursor-pointer ${copiado ? 'hover:bg-[#adadad]' : 'hover:bg-[#e90c2a]'} hover:opacity-80 p-2 w-full h-10 rounded-md flex justify-center items-center gap-2 text-white ${copiado ? 'bg-[#adadad]' : 'bg-[#e90c2a]'}`}
           >
+
             {resultado.toFixed(2)} {copiado ? <FaCheck /> : <FaCopy />}
           </button>
         </div>

@@ -3,12 +3,12 @@ import { useState } from "react";
 import Calculadoras from "../components/calculadoras/page";
 import { Container } from "../components/container/style";
 import Dados from "../components/dados/page";
-import TutorialConverter from "../components/tutorial/page";
 import Footer from "../containers/footer/page";
 import Header from "../containers/header/page";
 import { ContainerCalculator, TitleSensiCalculator } from "../conversor/style";
 import { useEffect } from "react";
 import CalculadoraEdpi from "../components/calculadoraEdpi/page";
+import TutorialEDPI from "../components/tutorialEdpi/page";
 
 export default function Edpi() {
   const images = [
@@ -50,7 +50,7 @@ export default function Edpi() {
       </ContainerCalculator>
 
       <Container>
-        <TutorialConverter />
+        <TutorialEDPI />
         <Dados />
         <h1 className="text-center text-2xl md:text-3xl font-semibold mb-8 md:mb-12">Outras calculadoras</h1>
         <Calculadoras />
