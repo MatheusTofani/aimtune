@@ -6,9 +6,10 @@ export const TitleSensiCalculator = styled.h1`
 `;
 
 export const ContainerCalculator = styled.div`
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    min-height: 700px;
-    transition: background-image 0.8s ease-in-out;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  transition: background-image 1s ease-in-out;
+  position: relative;
 `;

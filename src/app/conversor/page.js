@@ -35,10 +35,11 @@ export default function Conversor() {
   return (
     <>
       <Header />
-
       <ContainerCalculator
-        style={{ backgroundImage: `url(${backgroundImage}) ` }}
-        className=" py-10 flex flex-col items-center justify-center"
+      className="pt-10"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
       >
         <TitleSensiCalculator className="text-4xl font-semibold">
           Conversor de Sensibilidade
