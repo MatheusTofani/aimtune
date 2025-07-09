@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 * {
-    font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #FEF6EC;
+  background-color: #FEF6EC;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

@@ -1,6 +1,7 @@
 import "./globals.css";
 import Providers from "./providers";
 import StyledComponentsRegistry from "./styled-registry"; 
+import { Poppins } from 'next/font/google';
 
 export const metadata = {
   title: "Aim Tune",
@@ -10,9 +11,15 @@ export const metadata = {
   },
 };
 
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'], 
+  variable: '--font-poppins',   
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={poppins.className}>
       <body className="antialiased">
         <StyledComponentsRegistry>
           <Providers>{children}</Providers>
